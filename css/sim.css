@@ -1,0 +1,272 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body, html {
+	width: 100%;
+	height: 100%;
+	cursor: default;
+	overflow: hidden;
+}
+.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+.thr {
+	margin-top: 10px;
+	height: 32px;
+	width: 31.93333%;
+	float: left;
+	font-weight: bold;
+	text-align: center;
+	font-size: 15px;
+	background: rgb(243, 243, 243);
+	box-shadow: 0px 0px 0px 1px #b6b6b6;
+}
+#registry-container {
+	position: absolute;
+	z-index: 24;
+	width: 800px;
+	height: 94%;
+	background: rgb(111, 165, 207);
+	margin-left: -400px;
+	margin-top: 1%;
+	left: 50%;
+	box-shadow: 0em 0em 1px 1px black;
+	border-radius: 20px;
+}
+#registry {
+	overflow: auto;
+    border-spacing: 0px;
+    border-collapse: collapse;
+	margin: 3%;
+	outline: 10px solid rgb(168, 205, 234);
+	display: block;
+	overflow: auto;
+	overflow-x: hidden;
+	width: 93.8%;
+	margin-bottom: 10px;
+}
+.selectedServer, .selectedServer td, .selectedOption, .selectedOption td {
+	background-color: rgb(51, 153, 255) !important;
+	color: white !important;
+}
+#registry td {
+	padding: 1% !important;
+	background: white;
+	min-width: 250px;
+}
+#registry th {
+	background: #e6e6e6;
+	outline: 1px solid #b6b6b6;
+}
+#description {
+	width: 100%;
+	height: 100px;
+	background: white;
+	outline: 1px solid #b6b6b6;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#server {
+	width: 100%;
+	height: 100%;
+	background: rgb(111, 167, 207);
+	display: none;
+}
+.menu {
+	height: 19px;
+	background: rgb(240, 240, 240);
+	border-bottom: 1px solid rgb(216, 216, 216);
+}
+.menu ul {
+	list-style: none;
+}
+.menu ul li {
+	float: left;
+	margin-left: 10px;
+	font-size: 15px;
+	padding-top: 2px;
+}
+.menu ul li::first-letter { 
+    border-bottom: 1px solid black;
+}
+.chat-container {
+	margin-top: 24px;
+	margin-left: 5px;
+	background: rgb(92, 112, 126);
+	border-radius: 25px;
+}
+.left-side {
+	float: left;
+	width: 25%;
+	height: 100%;
+}
+.right-side {
+	float: left;
+	width: 75%;
+	height: 100%;
+}
+.tabs, .list, .rooms {
+	margin: 12px;
+}
+.tab {
+	float: left;
+	background: rgb(234, 234, 234);
+	border: 1px solid rgb(172, 172, 172);
+	padding: 7px;
+	width: 58px;
+	height: 17px;
+	text-align: center;
+	border-radius: 2px 2px 0px 0px;
+}
+.selectedTab {
+	background: rgb(255, 255, 255);
+	margin-top: -3px;
+	height: 20px;
+}
+.list {
+	margin-top: 0px;
+	float: left;
+	width: 90%;
+	background: white;
+	outline: 1px solid rgb(172, 172, 172);
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#channels div {
+	padding: 4px;
+	padding-left: 31px;
+	background: url(../themes/classic/client/greychatot.png);
+	background-size: auto 24px;
+	background-repeat: no-repeat;
+	background-position: 4px 0px;
+	font-size: 15px;
+}
+.list table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.list table td {
+	width: 44.5%;
+}
+.list table th {
+	width: 11%;
+	min-width: 30px;
+}
+.list table td, .list table th {
+	padding-top: 3.5px;
+	padding-bottom: 3.5px;
+}
+.list table p, .list table b {
+	width: 100%;
+	overflow-x: hidden;
+	text-align: right;
+	white-space: pre;
+}
+.list table b {
+	text-align: left;
+	font-weight: normal;
+}
+.selectedList {
+	z-index: 1;
+}
+.rooms {
+	height: 20px;
+}
+.room {
+	padding: 2px;
+	height: 24px;
+	border-radius: 5px 5px 0px 0px;
+	background: rgb(222, 222, 222);
+	border: 2px solid rgb(196, 196, 196);
+	color: rgb(9, 124, 0);
+	float: left;
+	line-height: 1.5;
+}
+.room:hover {
+	background: rgb(247, 247, 247);
+}
+.selectedRoom {
+	background: rgb(247, 247, 247);
+	margin-top: -3px;
+	height: 27px;
+	padding-top: 5px;
+	color: black;
+}
+.exitRoom {
+	color: black;
+	font-size: 25px;
+	float: right;
+	font-family: cursive;
+	margin-top: 1px;
+	margin-left: 6px;
+	text-shadow: 1px 2px white;
+	height: 18px;
+	line-height: 0.5;
+	padding: 2px;
+}
+.exitRoom:hover {
+	outline: 1px solid rgb(172, 172, 172);
+	background: white;
+}
+.announcement {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: rgb(255, 255, 205);
+	font-size: 12px;
+	outline: 1px solid #b6b6b6;
+	border-radius: 2px;
+	width: 99%;
+	display: none;
+}
+.announcement table {
+	width: 100%;
+}
+.logs {
+	padding: 5px;
+	background: white;
+	outline: 1px solid rgb(172, 172, 172);
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.selectedLogs {
+	z-index: 1;
+}
+.message {
+	height: 12px;
+	outline: 1px solid rgb(172, 172, 172);
+	padding: 5px;
+	margin-top: 10px;
+}
+.buttons {
+	margin-top: 10px;
+}
+.button {
+	width: 24%;
+	padding: 0;
+	margin: 0;
+	margin-right: 1%;
+	float: left;
+	height: 35px;
+}
+/* name part of server message */
+.server-message {
+    color: orange;
+    font-weight: bold;
+}
+
+/* name part of welcome message */
+.welcome-message {
+    color: blue;
+    font-weight: bold;
+}
+
+/* name part of scripted message / unknown name */
+.script-message {
+    color: #318739;
+    font-weight: bold;
+}

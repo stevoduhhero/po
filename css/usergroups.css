@@ -1,0 +1,19 @@
+.w0, .w1, .w2, .w3, .w4, .a0, .a1, .a2, .a3, .a4, .b0, .b1, .b2, .b3, .b4 {
+	padding: 3px;
+	padding-left: 41px;
+	font-size: 16px;
+	background-repeat: no-repeat !important;
+	background-position: 16px 3px !important;
+}
+.a0, .a4 {background: url(../Themes/Classic/client/uAvailable.png);}
+.w0, .w4 {background: url(../Themes/Classic/client/uAway.png);}
+.b0, .b4 {background: url(../Themes/Classic/client/uBattle.png);}
+.a1 {background: url(../Themes/Classic/client/mAvailable.png);}
+.w1 {background: url(../Themes/Classic/client/mAway.png);}
+.b1 {background: url(../Themes/Classic/client/mBattle.png);}
+.a2 {background: url(../Themes/Classic/client/aAvailable.png);}
+.w2 {background: url(../Themes/Classic/client/aAway.png);}
+.b2 {background: url(../Themes/Classic/client/aBattle.png);}
+.a3 {background: url(../Themes/Classic/client/oAvailable.png);}
+.w3 {background: url(../Themes/Classic/client/oAway.png);}
+.b3 {background: url(../Themes/Classic/client/oBattle.png);}

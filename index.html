@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pokemon Online</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="http://po-devs.github.io/webclient/libs/js/md5.js"></script>
+		<script src="./js/jquery.tablesorter.js"></script>
+		<script>var client = {};</script>
+		<script src="./js/network.js"></script>
+		<script src="./js/Channel.js"></script>
+		<script src="./js/client.js"></script>
+		<script>$(function() {client.init();})</script>
+		<link rel="stylesheet" type="text/css" href="./css/sim.css" />
+		<link rel="stylesheet" type="text/css" href="./css/usergroups.css" />
+	</head>
+	<body>
+		<div id="registry-container">
+			<table id="registry"></table>
+			<div style="width: 96%;height: 125px;margin: 1%;margin-left: 2%;">
+				<div style="height: 25px;line-height: 1.5;">Server Description</div>
+				<div id="description">Connecting to the registry...</div>
+			</div>
+			<div style="margin-left: 20px;">
+				<div style="float: left;">
+					<label>Trainer Name</label><br><input id="username" type="text" style="height: 20px;width: 150px">
+				</div>
+				<div style="float: left;margin-left: 10px;">
+					<label>Advanced Connection</label><br><input id="advcon" type="text" style="height: 20px;width: 598px">
+				</div>
+				<button id="advconbut" style="width: 100%;padding: 2px;margin-top: 10px;" onclick="client.connectToServer();">Advanced Connection</button>
+			</div>
+		</div>
+		<div id="server">
+			<div class="menu">
+				<ul>
+					<li>File</li>
+					<li>Theme</li>
+					<li>Style</li>
+					<li>Options</li>
+					<li>Tiers</li>
+					<li>Battle options</li>
+					<li>Language</li>
+					<li>About</li>
+					<li>Plugins</li>
+				</ul>
+			</div>
+			<div class="chat-container">
+				<div class="left-side">
+					<div class="tabs">
+						<div id="0" class="tab selectedTab">Players</div>
+						<div id="1" class="tab">Battles</div>
+						<div id="2" class="tab">Channels</div>
+					</div>
+					<div id="channels" class="list"></div>
+				</div>
+				<div class="right-side">
+					<div class="announcement"></div>
+					<div class="rooms"></div>
+					<div id="console" class="logs">If you don't connect to the server within 15 seconds it's safe to assume the server is down.<br />Connecting...<br /></div>
+					<input type="text" class="message" />
+					<div class="buttons">
+						<button id="0" class="button">Find Battle</button>
+						<button id="1" class="button">Reconnect</button>
+						<button id="2" class="button" onclick="window.location = window.location;">Exit</button>
+						<button id="sendButton" class="button">Send</button>
+					</div>
+				</div>
+			</div>
+			<div style="float: right;font-size: 14px;height: 16px;overflow: hidden;">Pokemon Online Simulator v2.5.0</div>
+		</div>
+	</body>
+</html>
